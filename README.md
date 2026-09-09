@@ -6,7 +6,7 @@ and then having to write a case to route the tokens to functions.
 Armstrong handles everything in one Ruby function:
 
 ```ruby
-Armstrong.given line, /if\s(?<value>.*?)\sisnt\s(?<condition>.*?), then: :generateIsntConditional
+Armstrong.given line, /if\s(?<value>.*?)\sisnt\s(?<condition>.*?), call: :generateIsntConditional
 ```
 
 I know passing the line brings back the repetitive things from earlier, but it was the cleanest approach other than using a global flag or something of that sort.
